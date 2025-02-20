@@ -1,0 +1,128 @@
+@keyframes slidein {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url('img/fondo.jpg'); /* Ruta de la imagen */
+
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #ff4081;
+    }
+
+    to {
+        box-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff4040;
+    text-shadow: 3px 3px 10px rgba(64, 210, 255, 0.7);
+    padding: 20px;
+    border: 5px solid #4073ff;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    animation: slidein 1s ease-out, glow 2s infinite alternate;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4073ff;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slidein 1.5s ease-out forwards;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 50%;
+    margin: auto;
+    color: #ff4040;
+    text-shadow: 3px 3px 10px rgba(64, 210, 255, 0.7);
+    padding: 20px;
+    border: 5px solid #4073ff;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    align-self: flex-end;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px;
+    align-items: right;
+    /* Espacio entre las imágenes */
+}
+
+.image-container img {
+    max-width: 80%;
+   
+    height: auto;
+}
+
+/* Estilo para los botones */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff4081; /* Rosa brillante para atraer atención */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect para los botones */
+.button:hover {
+    background-color: #ff62a5; /* Color ligeramente más fuerte */
+    transform: scale(1.1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.carousel-caption {
+    position: absolute;       /* Asegúrate de que sea absolute */
+    bottom: 20px;            /* Ajusta la distancia desde la parte inferior */
+    left: 50%;               /* Centra horizontalmente */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    border-radius: 10px;
+    width: 30%;              /* Reduce el ancho para que no cubra tanto la imagen */
+    padding: 15px;           /* Un padding cómodo para el texto */
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;      /* Centra el texto dentro de la caja */
+}
+
+/* Ajustar tamaño de fuentes */
+.carousel-caption h3 {
+    font-size: 1.5rem; /* Ajusta el tamaño según tu preferencia */
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1rem;   /* Ajusta el tamaño según tu preferencia */
+    margin: 0;
+    font-weight: 400;
+}
