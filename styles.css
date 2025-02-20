@@ -141,7 +141,7 @@ body {
     text-align: left;
     left: 0;
     right: auto;
-    padding-left: 30px; /* Ajusta según necesites */
+    padding-left: 10px; /* Ajusta según necesites */
 }
 
 .carousel-caption h3 {
