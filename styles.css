@@ -137,41 +137,21 @@ body {
         padding: 10px;     /* Reduce un poco el padding */
     }
 
-    .carousel-caption {
-        width: 60%;        /* Haz el recuadro más ancho para pantallas medianas */
-        font-size: 0.9rem; /* Ajusta el tamaño global de la fuente */
-        padding: 10px;
-    }
-
-    .carousel-caption h3 {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-    }
-
-    .carousel-caption p {
-        font-size: 0.9rem;
-    }
+ .carousel-caption {
+    text-align: left;
+    left: 0;
+    right: auto;
+    padding-left: 30px; /* Ajusta según necesites */
 }
 
-/* Ajustes para pantallas hasta 480px (teléfonos muy pequeños) */
-@media (max-width: 480px) {
-    .carousel-inner>.item>img,
-    .carousel-inner>.item>a>img {
-        width: 80%;
-        padding: 15px;
-    }
+.carousel-caption h3 {
+    font-size: 1rem;
+    margin: 0;
+}
 
-    .carousel-caption {
-        width: 70%;        /* Aún más ancho en teléfonos pequeños */
-        font-size: 0.8rem;
-        padding: 15px;
-    }
+.carousel-caption p {
+    font-size: 0.8rem;
+    margin: 0;
+}
 
-   .carousel-caption h3 {
-        font-size: 1rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.8rem;
-    }
 }
