@@ -126,3 +126,37 @@ body {
     margin: 0;
     font-weight: 400;
 }
+
+/* En pantallas de hasta 768px (tablets/phones) */
+@media (max-width: 768px) {
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+        width: 80%;
+        padding: 10px; /* Reduce un poco el padding en pantallas pequeñas */
+    }
+}
+
+/* En pantallas de hasta 480px (teléfonos muy pequeños) */
+@media (max-width: 480px) {
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+        width: 100%;
+        padding: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-caption {
+        width: 50%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+        width: 70%;
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
