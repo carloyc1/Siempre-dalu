@@ -117,13 +117,13 @@ body {
 
 /* Ajustar tamaño de fuentes */
 .carousel-caption h3 {
-    font-size: 1.5rem; /* Ajusta el tamaño según tu preferencia */
+    font-size: 10; /* Ajusta el tamaño según tu preferencia */
     margin: 0 0 10px 0;
     font-weight: 700;
 }
 
 .carousel-caption p {
-    font-size: 1rem;   /* Ajusta el tamaño según tu preferencia */
+    font-size: 8;   /* Ajusta el tamaño según tu preferencia */
     margin: 0;
     font-weight: 400;
 }
