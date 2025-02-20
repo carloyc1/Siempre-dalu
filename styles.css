@@ -102,7 +102,7 @@ body {
 
 .carousel-caption {
     position: absolute;       /* Asegúrate de que sea absolute */
-    bottom: 20px;            /* Ajusta la distancia desde la parte inferior */
+    bottom: 10px;            /* Ajusta la distancia desde la parte inferior */
     left: 50%;               /* Centra horizontalmente */
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
@@ -111,7 +111,8 @@ body {
     padding: 15px;           /* Un padding cómodo para el texto */
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    text-align: center;      /* Centra el texto dentro de la caja */
+    text-align: center; 
+    top : auto;/* Centra el texto dentro de la caja */
 }
 
 /* Ajustar tamaño de fuentes */
@@ -126,37 +127,3 @@ body {
     margin: 0;
     font-weight: 400;
 }
-
-/* En pantallas de hasta 768px (tablets/phones) */
-@media (max-width: 768px) {
-    .carousel-inner>.item>img,
-    .carousel-inner>.item>a>img {
-        width: 50%;
-        padding: 10px; /* Reduce un poco el padding en pantallas pequeñas */
-    }
-}
-
-/* En pantallas de hasta 480px (teléfonos muy pequeños) */
-@media (max-width: 480px) {
-    .carousel-inner>.item>img,
-    .carousel-inner>.item>a>img {
-        width: 50%;
-        padding: 5px;
-    }
-}
-@media (max-width: 768px) {
-    .carousel-caption {
-        width: 50%;
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-caption {
-        width: 50%;
-        font-size: 0.8rem;
-        padding: 8px;
-    }
-}
-
