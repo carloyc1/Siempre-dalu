@@ -101,7 +101,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .carousel-caption {
-    position: absolute;       /* Asegúrate de que sea absolute */
+    position: relative;       /* Asegúrate de que sea absolute */
     bottom: 20px;            /* Ajusta la distancia desde la parte inferior */
     left: 50%;               /* Centra horizontalmente */
     transform: translateX(-50%);
