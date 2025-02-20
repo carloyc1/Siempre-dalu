@@ -131,7 +131,7 @@ body {
 @media (max-width: 768px) {
     .carousel-inner>.item>img,
     .carousel-inner>.item>a>img {
-        width: 80%;
+        width: 50%;
         padding: 10px; /* Reduce un poco el padding en pantallas pequeñas */
     }
 }
@@ -140,7 +140,7 @@ body {
 @media (max-width: 480px) {
     .carousel-inner>.item>img,
     .carousel-inner>.item>a>img {
-        width: 100%;
+        width: 50%;
         padding: 5px;
     }
 }
@@ -154,7 +154,7 @@ body {
 
 @media (max-width: 480px) {
     .carousel-caption {
-        width: 70%;
+        width: 50%;
         font-size: 0.8rem;
         padding: 8px;
     }
