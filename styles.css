@@ -102,7 +102,7 @@ body {
 
 .carousel-caption {
     position: absolute;       /* Asegúrate de que sea absolute */
-    bottom: 10px;            /* Ajusta la distancia desde la parte inferior */
+    bottom: 20px;            /* Ajusta la distancia desde la parte inferior */
     left: 50%;               /* Centra horizontalmente */
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
@@ -111,8 +111,8 @@ body {
     padding: 15px;           /* Un padding cómodo para el texto */
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    text-align: center; 
-    top : auto;/* Centra el texto dentro de la caja */
+    text-align: center;      /* Centra el texto dentro de la caja */
+    top: 50;
 }
 
 /* Ajustar tamaño de fuentes */
